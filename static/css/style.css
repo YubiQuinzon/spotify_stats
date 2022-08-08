@@ -1,0 +1,179 @@
+body{
+    background: black;
+}
+
+.intropage{
+    position:relative;
+    top: 200px;
+}
+
+.logo1 {
+    color: #1DB954;
+}
+
+
+.spotifytitle {
+    position:relative;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 600%;
+    bottom: 10px;
+    color: white;
+    
+}
+.spotifytitle2 {
+    position:relative;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 600%;
+    color: white;
+}
+
+.parentplot{
+    position: relative;
+    margin-left: 20px;
+    margin-top: -45px;
+}
+
+.genretitle {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 400;
+    font-size: 600%;
+    color: white;
+}
+
+.spotifyexplanation{
+    position:relative;
+    font-family: 'Gotham', sans-serif;
+    bottom: 60px;
+    color: white;
+}
+
+.explanationchart{
+    font-size: 400%;
+    color: #ffffff;
+    float: right;
+    
+}
+.parentbarplot{
+    position: relative;
+    right: 20px;
+}
+.deletethis{
+    border:6px solid #1DB954;
+}
+
+ul {
+    width: 70%;
+    margin: auto;
+}
+
+il {
+    color: white;
+    font-size: 200%;
+    margin: auto;
+}
+
+.startbutton {
+    position:relative;
+    bottom: 70px;
+}
+
+.chartbutton
+   
+.maintable{
+    color: white;
+    font-size: 100%;
+    font-weight: 10;
+}
+
+.tableHeader{
+    color: white;
+    font-size: 150%;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 10;
+}
+
+th{
+    font-family: 'Gotham', sans-serif;
+    color: white;
+    font-size: 150%;
+    font-weight: 300;
+    width: 150px;
+    height: 51px;
+}
+
+td{
+    font-family: 'Gotham', sans-serif;
+    color: white;
+    font-size: 100%;
+    font-weight: 1;
+    width: 244px;
+    height: 137px;
+}
+
+.profilename{
+    position: relative;
+    bottom: 40px;
+    color: white;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+}
+
+.profilepicture{
+    position: relative;
+    bottom: 55px;
+    border-radius: 50%
+}
+
+.tableimg{
+    width: 100px;
+    height: 120px; 
+    margin-left: 40px;
+}
+
+.tableimg2{
+    width: 100px;
+    height: 120px; 
+    margin-left: 40px;
+}
+
+.child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: rgb(33, 32, 32);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 28px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover, .navbar i:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #1DB954;
+    color: black;
+  }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script src="static/js/app.js"></script>
+    <script src="static/js/stats.js"></script>
+    <script src="static/js/genres.js"></script>
+    <script src="static/js/plots.js"></script>
+
+    <title>SPOTIFY STATS (STATS PAGE)</title>
+</head>
+
+<body onload="pageBootup()">
+    <div class="parentdiv wrapper">
+
+        <div class="profileinfo col-md-12 col-xs-12 text-center w3-responsive animated animatedFadeInUp fadeInUp text-sm-center" id="profileinfo">
+            <h1 class = 'spotifytitle2'><i id= 'logolink' class=" logo1 fa fa-spotify fa-1x"></i> SPOTIFY STATS</h1> 
+            <h2 class = 'profilename' id="profilename"></h2>
+            <img class='center profilepicture' id="profilepicture" src="static/images/blankprofile.jpg" width="100" height="100">
+        </div>
+
+        <div class="timerange text-center animated animatedFadeInUp fadeInUp">
+            <div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-success" id="A4weeks" onclick="click4weeks()">4 Weeks</button>
+                <button type="button" class="btn btn-success" id="A6mon" onclick="click6mon()">6 Months</button>
+                <button type="button" class="btn btn-success" id="Aalltime" onclick="clickalltime()">All Time</button>
+            </div>
+        </div>
+
+
+        
+        <br><br>
+
+
+        <div class = "row col-md-12 text-center w3-responsive animated animatedFadeInUp fadeInUp" id="alltables">
+            
+            <div class="container child col-md-5 text-center parentdiv w3-responsive animated animatedFadeInUp fadeInUp" style="float: left;" id="tableparentdiv">
+                <h3 class = 'tableHeader'>TOP ARTISTS</h3>
+                <table id = 'tableStats' class="w3-table w3-bordered maintable w3-center"></table>
+            </div> 
+
+            <div class="container child col-md-5 text-center parentdiv w3-responsive animated animatedFadeInUp fadeInUp" style="float: right;" id="tableparentdiv2">
+                <h3 class = 'tableHeader'>TOP TRACKS</h3>
+                <table id = 'tableStats2' class="w3-table w3-bordered maintable w3-center"></table>
+            </div> 
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+    <div class="navbar">
+        <a href="index.html"><i class="logo1 fa fa-spotify fa-2x"></i></a>
+        <a href="stats.html" class="active"><i class="logo2 fa fa-table fa-2x"></i></a>
+        <a href="genres.html"><i class="logo2 fa fa-bar-chart fa-2x"></i></a>
+    </div>
+
+</body>
+
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
