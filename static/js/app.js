@@ -84,6 +84,6 @@ function requestAuthorization(){
     url += '&response_type=code';
     url += '&redirect_uri=' + encodeURI(redirect_uri);
     url += '&show_dialoge=true';
-    url += '&scope=user-read-private app-remote-control user-read-email user-modify-playback-state user-top-read playlist-modify-public user-read-currently-playing user-read-recently-played user-read-playback-position playlist-read-private user-library-read streaming'
+    url += '&scope=user-read-private user-read-email user-top-read playlist-read-private user-library-read'
     window.location.href = url;
 }
