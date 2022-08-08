@@ -6,7 +6,7 @@ var client_secret = process.env.CLIENT_SECRET;
 const AUTHORIZE = 'https://accounts.spotify.com/authorize'
 const TOKEN = 'https://accounts.spotify.com/api/token';
 
-// When page loads, checks url for authorization code.
+// When page loads, checks url for authorization code
 function onPageLoad(){
     if (window.location.search.length > 0){
         handleRedirect();
