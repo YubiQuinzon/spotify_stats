@@ -14,19 +14,23 @@ body{
 
 .spotifytitle {
     position:relative;
-    font-family: 'Gotham', sans-serif;
+    /* font-family: 'Gotham', sans-serif; */
     font-weight: 400;
     font-size: 600%;
-    bottom: 10px;
+    bottom: 50px;
     color: white;
-    font-family: 'Gotham', sans-serif;
 }
 
 .spotifyexplanation{
     position:relative;
-    font-family: 'Gotham', sans-serif;
-    bottom: 60px;
+    /* font-family: 'Gotham', sans-serif; */
+    bottom: 75px;
     color: white;
+}
+
+.startbutton {
+    position:relative;
+    bottom: 85px;
 }
 
 .spotifytitle2 {
@@ -75,11 +79,6 @@ il {
     color: white;
     font-size: 200%;
     margin: auto;
-}
-
-.startbutton {
-    position:relative;
-    bottom: 70px;
 }
 
 .chartbutton
