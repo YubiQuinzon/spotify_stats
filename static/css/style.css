@@ -19,12 +19,12 @@ body{
     font-size: 600%;
     bottom: 10px;
     color: white;
-    /* font-family: 'Gotham', sans-serif; */
+    font-family: 'Gotham', sans-serif;
 }
 
 .spotifyexplanation{
     position:relative;
-    /* font-family: 'Gotham', sans-serif; */
+    font-family: 'Gotham', sans-serif;
     bottom: 60px;
     color: white;
 }
