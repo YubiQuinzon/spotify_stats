@@ -1,7 +1,7 @@
 var redirect_uri = 'http://127.0.0.1:5500/index.html'
 
 var client_id = 'f0cd086c71734ab287d5bac2266b52cc';
-var client_secret = '3b25e195e4254814bd5d9a56d224eb11';
+var client_secret = process.env.CLIENT_SECRET;
 
 const AUTHORIZE = 'https://accounts.spotify.com/authorize'
 const TOKEN = 'https://accounts.spotify.com/api/token';
