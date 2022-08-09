@@ -5,6 +5,7 @@ var client_secret = process.env.API_KEY;
 
 const AUTHORIZE = 'https://accounts.spotify.com/authorize'
 const TOKEN = 'https://accounts.spotify.com/api/token';
+require('dotenv').config();
 
 // When page loads, checks url for authorization code.
 function onPageLoad(){
