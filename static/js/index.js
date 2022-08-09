@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var client_secret = process.env.API_KEY;
 var client_id = 'f0cd086c71734ab287d5bac2266b52cc';
 
@@ -6,7 +8,6 @@ var redirect_uri = 'https://yq-spotify-stats.herokuapp.com/'  //'http://127.0.0.
 
 const AUTHORIZE = 'https://accounts.spotify.com/authorize'
 const TOKEN = 'https://accounts.spotify.com/api/token';
-require('dotenv').config();
 
 // When page loads, checks url for authorization code.
 function onPageLoad(){
