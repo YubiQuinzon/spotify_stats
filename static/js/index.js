@@ -8,6 +8,7 @@ const TOKEN = 'https://accounts.spotify.com/api/token';
 
 // When page loads, checks url for authorization code.
 function onPageLoad(){
+    console.log(client_secret);
     if (window.location.search.length > 0){
         handleRedirect();
     }
