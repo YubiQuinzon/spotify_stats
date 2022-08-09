@@ -1,4 +1,4 @@
-var redirect_uri = 'http://127.0.0.1:5500/index.html'
+var redirect_uri = 'https://yubiquinzon.github.io/spotify_stats/'  //'http://127.0.0.1:5500/index.html'
 
 var client_id = 'f0cd086c71734ab287d5bac2266b52cc';
 var client_secret = '3b25e195e4254814bd5d9a56d224eb11';
