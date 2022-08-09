@@ -1,5 +1,6 @@
 <script type="text/javascript">
     var API_KEY = "<?php echo $API_KEY; ?>";
+    document.write(x);
 </script>
 
 <?php 
