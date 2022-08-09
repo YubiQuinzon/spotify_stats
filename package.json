@@ -1,9 +1,1 @@
-{
-"scripts": {
-    "start": "nodemon index.js",
-    "build": "cd client && npm install && npm run build"
-},
-"dependencies": {
-    "dotenv": "^16.0.1"
-}
-}
+{}
