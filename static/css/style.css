@@ -35,7 +35,7 @@ body{
 
 .spotifytitle2 {
     position:relative;
-    font-family: 'Gotham', sans-serif;
+    /* font-family: 'Gotham', sans-serif; */
     font-weight: 400;
     font-size: 600%;
     color: white;
@@ -44,11 +44,11 @@ body{
 .parentplot{
     position: relative;
     margin-left: 20px;
-    margin-top: -45px;
+    margin-top: -35px;
 }
 
 .genretitle {
-    font-family: 'Gotham', sans-serif;
+    /* font-family: 'Gotham', sans-serif; */
     font-weight: 400;
     font-size: 600%;
     color: white;
@@ -92,12 +92,12 @@ il {
 .tableHeader{
     color: white;
     font-size: 150%;
-    font-family: 'Gotham', sans-serif;
+    /* font-family: 'Gotham', sans-serif; */
     font-weight: 10;
 }
 
 th{
-    font-family: 'Gotham', sans-serif;
+    /* font-family: 'Gotham', sans-serif; */
     color: white;
     font-size: 150%;
     font-weight: 300;
@@ -106,7 +106,7 @@ th{
 }
 
 td{
-    font-family: 'Gotham', sans-serif;
+    /* font-family: 'Gotham', sans-serif; */
     color: white;
     font-size: 100%;
     font-weight: 1;
@@ -116,15 +116,15 @@ td{
 
 .profilename{
     position: relative;
-    bottom: 40px;
+    bottom: 30px;
     color: white;
-    font-family: 'Gotham', sans-serif;
-    font-weight: 300;
+    /* font-family: 'Gotham', sans-serif; */
+    font-weight: 0;
 }
 
 .profilepicture{
     position: relative;
-    bottom: 55px;
+    bottom: 40px;
     border-radius: 50%
 }
 
