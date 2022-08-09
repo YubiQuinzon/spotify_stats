@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 var client_secret = process.env.API_KEY;
 var client_id = 'f0cd086c71734ab287d5bac2266b52cc';
 

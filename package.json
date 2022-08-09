@@ -1,4 +1,8 @@
 {
 "scripts": {
     "start": "nodemon index.js"
-}}
+},
+"dependencies": {
+    "dotenv": "^16.0.1"
+}
+}
