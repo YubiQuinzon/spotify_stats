@@ -1,4 +1,6 @@
+
 <?php 
-$API_KEY = getVar("API_KEY");
+$API_KEY = getenv("API_KEY");
+echo "<h2>"  .$API_KEY. "is Fun!</h2>";
 include_once("index.html"); 
 ?>
