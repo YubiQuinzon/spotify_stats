@@ -1,7 +1,7 @@
 var redirect_uri = 'https://yq-spotify-stats.herokuapp.com/'  //'http://127.0.0.1:5500/index.html'
 
 var client_id = 'f0cd086c71734ab287d5bac2266b52cc';
-var client_secret = API_KEY;
+var client_secret = '<?=$API_KEY?>';
 
 const AUTHORIZE = 'https://accounts.spotify.com/authorize'
 const TOKEN = 'https://accounts.spotify.com/api/token';
