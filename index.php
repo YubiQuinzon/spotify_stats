@@ -4,7 +4,7 @@
 
 <?php 
 $API_KEY = getenv("API_KEY");
-echo "<script>var API_KEY ='$API_KEY';</script>";
+echo "<h2>".$API_KEY."</h2>";
 include("index.html"); 
 ?>
 
