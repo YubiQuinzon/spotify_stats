@@ -1,6 +1,6 @@
 
 <?php 
 $API_KEY = getenv('APIKEY');
-console.log($API_KEY);
+print "<h2>. $API_KEY . is Fun!</h2>";
 include_once("index.html"); 
 ?>
