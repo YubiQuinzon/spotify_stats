@@ -226,7 +226,7 @@ function handleTopTracksResponse(){
         localStorage.setItem("track_rank", track_rank);
         localStorage.setItem("track_list", track_list);
         localStorage.setItem("track_image", track_image);
-        localStorage.setItem("track_artist", track_artist);
+        localStorage.setItem("track_artist", track_artist); //
 
 
         console.log(track_rank)
