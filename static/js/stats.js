@@ -171,6 +171,16 @@ function iteratorTopTrackImage(database){
     }
 }
 
+function iteratorTopTrackArtists(database){
+    if (database.items[0]['artists'][0]['name'] != null){    
+        var target_list = [];
+        for (i=0; i<limit_count; i++){
+            target_list.push(database.items[i]['artists'][0]['name']);
+        }
+        return(target_list)
+    }
+}
+
 function updateArtistsTable(){
     var selector = d3.select("#tableparentdiv")
     d3.select('#tableStats').remove();
@@ -186,7 +196,7 @@ function updateArtistsTable(){
 
 function addArtistTableEntry(count_limit, tables){
     for (i=0; i<count_limit; i++){
-        var string = '<tr><td>' + artist_rank[i] + '<img class = "tableimg" src=' + artist_image[i] + '></img></td><td>' + artist_list[i] + '</td></tr>';
+        var string = '<tr><td>' + artist_rank[i] + '<img class = "tableimg" src=' + artist_image[i] + '></img></td><td><h4>' + artist_list[i] + '</h4></td></tr>';
         tables.innerHTML += string
     }
 }
@@ -211,15 +221,18 @@ function handleTopTracksResponse(){
         track_rank = getRank(iterator_count);
         track_list = iteratorTopList(data)
         track_image = iteratorTopTrackImage(data)
+        track_artist = iteratorTopTrackArtists(data)
 
         localStorage.setItem("track_rank", track_rank);
         localStorage.setItem("track_list", track_list);
         localStorage.setItem("track_image", track_image);
+        localStorage.setItem("track_artist", track_artist);
 
 
         console.log(track_rank)
         console.log(track_list)
         console.log(track_image)
+        console.log(track_artist)
 
         updateTrackTable()
     }
@@ -247,7 +260,7 @@ function updateTrackTable(){
 
 function addTrackTableEntry(count_limit, tables){
     for (i=0; i<count_limit; i++){
-        var string = '<tr><td>' + track_rank[i] + '<img class = "tableimg2" src=' + track_image[i] + '></img></td><td>' + track_list[i] + '</td></tr>';
+        var string = '<tr><td>' + track_rank[i] + '<img class = "tableimg2" src=' + track_image[i] + '></img></td><td><h4>' + track_list[i] + '</h4><h6>' + track_artist[i] + '</h6></td></tr>';
         tables.innerHTML += string
     }
 }
