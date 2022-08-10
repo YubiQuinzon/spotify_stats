@@ -20,17 +20,25 @@ function cleanGenreList(){
     var items = Object.keys(genre_dict).map(
         (key) => { return [key, genre_dict[key]] });
       
-      items.sort(
+    items.sort(
         (first, second) => { return second[1] - first[1] }
-      );
+    );
 
-      var keys = items.map(
-        (e) => {return e[0]});
+    var keys = items.map((e) => {return e[0]});
     
-    ordered_genre_list = items.slice(0,10);
+    var counter = 0;
+    if (items.length < 9){
+        counter = items.length
+    }
+    else{
+        counter = 9
+    }
+    
+    ordered_genre_list = items.slice(0,counter+1);
     ordered_genre_list.sort(
         (first, second) => { return first[1] - second[1] }
       );
+
     console.log(ordered_genre_list)
 
     plotBarGraph()
@@ -116,12 +124,15 @@ function plotBarGraph(){
         .attr('id', 'genrelist')
     
     const list = document.getElementById("genrelist");
-    for (i=9; i>-1; i--){
+    var counter = 0;
+    if (ordered_genre_list.length < 9){
+        counter = ordered_genre_list.length
+    }
+    else{
+        counter = 9
+    }
+    for (i=counter; i>-1; i--){
         var string = '<il>' + ordered_genre_list[i][0].toUpperCase() + '</il><br>';
         list.innerHTML += string
     }
-
-    
-
-
 }
